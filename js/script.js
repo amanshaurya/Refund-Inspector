@@ -54,3 +54,9 @@
     });
 
 })(jQuery); // End of use strict
+
+
+$(document).ready(function() {
+    $('#dataTable').DataTable();
+    $('.dataTables_length').addClass('bs-select');
+});
