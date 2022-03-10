@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Refund inspector- All Shipment</title>
+    <title>Refund inspector- Fee Protector-edit</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,6 @@
     <!-- Custom styles for this template-->
     <link href="css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
 </head>
 
 <body id="page-top">
@@ -55,7 +54,7 @@
             </li>
 
             <!-- Nav Item - All Shipment -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="All-Shipment.html">
                     <i class="fa fa-check-to-slot"></i>
                     <span> All Shipment </span></a>
@@ -64,7 +63,7 @@
 
 
             <!-- Nav Item - Fee Protector -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="Fee-Protector.html">
                     <i class="fa fa-users" aria-hidden="true"></i>
                     <span>Fee Protector</span></a>
@@ -315,7 +314,6 @@
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </div>
-
                     </div>
 
                     <!-- DataTables Example -->
@@ -332,8 +330,8 @@
                                             <th>Discrepancy</th>
                                             <th>Expected</th>
                                             <th>Reimbursed</th>
-                                            <th class="pl-5">Status</th>
-                                            <th class="pl-5">Action</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -345,205 +343,12 @@
                                             <td>2011/04/25</td>
                                             <td>$320,800</td>
                                             <td>$320,800</td>
-
-
-                                            <!-- Adjust Modal starts -->
+                                            <td>$320,800</td>
+                                            <!-- ACTION -->
                                             <td>
-
-                                                <div class="container">
-                                                    <div class="height d-flex justify-content-center align-items-center"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white pl-4 pr-4 font-weight-lighter" data-toggle="modal" data-target="#adjustModal"> Adjust </button> </div>
-                                                </div>
-                                                <!-- Modal -->
-                                                <div class="modal fade drop-shadow" id="adjustModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-xl ">
-                                                        <div class="modal-content">
-                                                            <div class="modal-heade px-5 py-5 bg-black">
-                                                                <div class="row">
-                                                                    <div class="col-6">
-                                                                        <p style="font-size: 14px;">Shipment ID:FBA155SQLTBJL</p>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <p>Adjust unit shipped?</p>
-                                                                    </div>
-
-
-
-                                                                    <div class="col-3">
-                                                                        <p style="font-size: 14px;">Shipped in Full ?</p>
-                                                                    </div>
-                                                                    <div class="col-9">
-                                                                        <div class="height d-flex"> <a><button type="button" class="btn btn-primary action-button bg-gray-800 text-white pl-4 pr-4 font-weight-lighter"> Confirm All </button> </a></div>
-
-                                                                    </div>
-
-                                                                    <div class="col mt-4">
-                                                                        <div class="table-responsive overflow-hidden">
-                                                                            <table class="table table-no-border" id="dataTable" width="100%" cellspacing="0">
-                                                                                <thead>
-                                                                                    <tr class="sidebar-divider-bottom ">
-                                                                                        <th>Title</th>
-                                                                                        <th></th>
-                                                                                        <th>Shipped</th>
-                                                                                        <th>Recieved</th>
-                                                                                        <th>Discrepancy</th>
-                                                                                    </tr>
-                                                                                </thead>
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <img src="img/image.jpg" width="500" height="500">
-                                                                                        </td>
-                                                                                        <td>
-                                                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eveniet iste nemo totam fuga provident quae illo dicta quas! Placeat.Lorem ipsum dolor sit
-                                                                                                amet consectetur adipisicing elit. Voluptatibus eveniet iste nemo totam fuga provident quae illo dicta quas! Placeat.</p>
-                                                                                        </td>
-                                                                                        <td>80</td>
-                                                                                        <td>70</td>
-                                                                                        <td>61</td>
-
-                                                                                        <!-- ACTION -->
-                                                                                        <td>
-                                                                                            <div class="col">
-                                                                                                <a href="#"> <button type="button" class="btn btn-secondary action-button bg-gray-800 text-white font-weight-lighter"> Adjust </button></a>
-                                                                                            </div>
-                                                                                            <div class="col py-2">
-                                                                                                <a href="#"> <button type="button" class="btn btn-transparent action-button bg-gray-800 text-white font-weight-lighter"> Unit Shipped </button></a>
-                                                                                            </div>
-                                                                                            <div class="row">
-                                                                                                <div class="col-6">
-                                                                                                    <a href="#"> <button type="button" class="btn btn-primary px-4 text-white font-weight-lighter"> save </button></a>
-                                                                                                </div>
-                                                                                                <div class="col-6 px-0">
-                                                                                                    <a href="#"> <button type="button" class="btn btn-primary px-4 text-white font-weight-lighter"> cancel </button></a>
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                        </td>
-                                                                                        <!-- action ends here -->
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <img src="img/image.jpg" width="500" height="500">
-                                                                                        </td>
-                                                                                        <td>
-                                                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eveniet iste nemo totam fuga provident quae illo dicta quas! Placeat.Lorem ipsum dolor sit
-                                                                                                amet consectetur adipisicing elit. Voluptatibus eveniet iste nemo totam fuga provident quae illo dicta quas! Placeat.</p>
-                                                                                        </td>
-                                                                                        <td>10</td>
-                                                                                        <td>50</td>
-                                                                                        <td>63</td>
-                                                                                        <td>
-                                                                                            <div class="col">
-                                                                                                <a href="#"> <button type="button" class="btn btn-secondary action-button bg-gray-800 text-white font-weight-lighter"> Adjust </button></a>
-                                                                                            </div>
-                                                                                            <div class="col py-2">
-                                                                                                <a href="#"> <button type="button" class="btn btn-transparent action-button bg-gray-800 text-white font-weight-lighter"> Unit Shipped </button></a>
-                                                                                            </div>
-                                                                                            <div class="row">
-                                                                                                <div class="col-6">
-                                                                                                    <a href="#"> <button type="button" class="btn btn-primary px-4 text-white font-weight-lighter"> save </button></a>
-                                                                                                </div>
-                                                                                                <div class="col-6 px-0">
-                                                                                                    <a href="#"> <button type="button" class="btn btn-primary px-4 text-white font-weight-lighter"> cancel </button></a>
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                        </td>
-                                                                                    </tr>
-
-                                                                                </tbody>
-                                                                            </table>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-body bg-black">
-                                                                <div class="row modal-body bg-black">
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer bg-black justify-content-center"> <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <a href="free-protector-edit.html"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Edit </button></a>
                                             </td>
-                                            <!-- Adjust Modal ends -->
-
-
-                                            <!-- upload Modal starts -->
-                                            <td>
-
-                                                <div class="container">
-                                                    <div class="height d-flex justify-content-center align-items-center"> <button type="button" class="btn btn-primary action-button bg-gray-800 pl-4 pr-4 text-white font-weight-lighter" data-toggle="modal" data-target="#uploadModal"> Upload </button> </div>
-                                                </div>
-
-                                                <!-- Modal -->
-                                                <div class="modal fade drop-shadow" id="uploadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-xl ">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header float-right bg-black">
-                                                            </div>
-                                                            <div class="modal-body bg-black">
-                                                                <div class="modal-body bg-black justify-content-center">
-                                                                    <div class="row">
-                                                                        <div class="col ml-5 px-5 ">
-                                                                            <p style="font-size: 12px;">Shipment ID:FBA155SQLTBJL</p>
-                                                                        </div>
-                                                                        <div class="col">
-                                                                            <h5>Upload shipment document</h5>
-                                                                        </div>
-
-                                                                    </div>
-
-                                                                    <div class="row mt-5">
-                                                                        <div class="col-12 ml-5 px-5 ">
-                                                                            <p>Note: Please upload the documents in PDF,JPEG or JPG format</p>
-                                                                        </div>
-
-
-                                                                    </div>
-                                                                    <div class="row mt-5 ml-5">
-                                                                        <div class="col-3">
-                                                                            <div class="dropdown border-0">
-                                                                                <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                                                                                  Select Document type
-                                                                                </a>
-
-                                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                                    <a class="dropdown-item" href="#">Action</a>
-                                                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-5">
-
-                                                                            <div class="input-group">
-                                                                                <div class="custom-file">
-                                                                                    <input type="file" class="custom-file-input" id="inputGroupFile04">
-                                                                                    <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
-                                                                                </div>
-
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-4">
-                                                                            <a href="# "> <button type="button " class="btn btn-secondary action-button bg-gray-800 text-white font-weight-lighter ">Submit </button></a>
-                                                                        </div>
-                                                                    </div>
-
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer bg-black justify-content-center"> <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </td>
-                                            <!-- upload Modal ends -->
-
-
+                                            <!-- action ends here -->
                                         </tr>
                                         <tr>
                                             <td>Garrett Winters</td>
@@ -552,207 +357,6 @@
                                             <td>63</td>
                                             <td>2011/07/25</td>
                                             <td>$170,750</td>
-                                            <td>$2465,1522</td>
-                                            <!-- Adjust Modal starts -->
-                                            <td>
-
-                                                <div class="container">
-                                                    <div class="height d-flex justify-content-center align-items-center"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white pl-4 pr-4 font-weight-lighter" data-toggle="modal" data-target="#adjustModal"> Adjust </button> </div>
-                                                </div>
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="adjustModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-xl ">
-                                                        <div class="modal-content">
-                                                            <div class="modal-heade px-5 py-5 bg-black">
-                                                                <div class="row">
-                                                                    <div class="col-6">
-                                                                        <p style="font-size: 14px;">Shipment ID:FBA155SQLTBJL</p>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <p>Adjust unit shipped?</p>
-                                                                    </div>
-
-
-
-                                                                    <div class="col-3">
-                                                                        <p style="font-size: 14px;">Shipped in Full ?</p>
-                                                                    </div>
-                                                                    <div class="col-9">
-                                                                        <div class="height d-flex"> <a><button type="button" class="btn btn-primary action-button bg-gray-800 text-white pl-4 pr-4 font-weight-lighter"> Confirm All </button> </a></div>
-
-                                                                    </div>
-
-                                                                    <div class="col mt-4">
-                                                                        <div class="table-responsive overflow-hidden">
-                                                                            <table class="table table-no-border" id="dataTable" width="100%" cellspacing="0">
-                                                                                <thead>
-                                                                                    <tr class="sidebar-divider-bottom ">
-                                                                                        <th>Title</th>
-                                                                                        <th>Shipped</th>
-                                                                                        <th>Recieved</th>
-                                                                                        <th>Discrepancy</th>
-                                                                                    </tr>
-                                                                                </thead>
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="row align-items-center justify-content-center">
-                                                                                                <div class="col-3">
-                                                                                                    <img src="img/refund inspector logo.png">
-                                                                                                </div>
-                                                                                                <div class="col-9">
-                                                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eveniet iste nemo totam fuga provident quae illo dicta quas! Placeat.</p>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>80</td>
-                                                                                        <td>70</td>
-                                                                                        <td>61</td>
-
-                                                                                        <!-- ACTION -->
-                                                                                        <td>
-                                                                                            <div class="col">
-                                                                                                <a href="#"> <button type="button" class="btn btn-secondary action-button bg-gray-800 text-white font-weight-lighter"> Adjust </button></a>
-                                                                                            </div>
-                                                                                            <div class="col py-2">
-                                                                                                <a href="#"> <button type="button" class="btn btn-transparent action-button bg-gray-800 text-white font-weight-lighter"> Unit Shipped </button></a>
-                                                                                            </div>
-                                                                                            <div class="row">
-                                                                                                <div class="col-6">
-                                                                                                    <a href="#"> <button type="button" class="btn btn-primary px-4 text-white font-weight-lighter"> save </button></a>
-                                                                                                </div>
-                                                                                                <div class="col-6 px-0">
-                                                                                                    <a href="#"> <button type="button" class="btn btn-primary px-4 text-white font-weight-lighter"> cancel </button></a>
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                        </td>
-                                                                                        <!-- action ends here -->
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div class="row">
-                                                                                                <div class="col-3">
-                                                                                                    <img src="img/refund inspector logo.png">
-                                                                                                </div>
-                                                                                                <div class="col-9">
-                                                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eveniet iste nemo totam fuga provident quae illo dicta quas! Placeat.</p>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                        <td>10</td>
-                                                                                        <td>50</td>
-                                                                                        <td>63</td>
-                                                                                        <td>
-                                                                                            <div class="col">
-                                                                                                <a href="#"> <button type="button" class="btn btn-secondary action-button bg-gray-800 text-white font-weight-lighter"> Adjust </button></a>
-                                                                                            </div>
-                                                                                            <div class="col py-2">
-                                                                                                <a href="#"> <button type="button" class="btn btn-transparent action-button bg-gray-800 text-white font-weight-lighter"> Unit Shipped </button></a>
-                                                                                            </div>
-                                                                                            <div class="row">
-                                                                                                <div class="col-6">
-                                                                                                    <a href="#"> <button type="button" class="btn btn-primary px-4 text-white font-weight-lighter"> save </button></a>
-                                                                                                </div>
-                                                                                                <div class="col-6 px-0">
-                                                                                                    <a href="#"> <button type="button" class="btn btn-primary px-4 text-white font-weight-lighter"> cancel </button></a>
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                        </td>
-                                                                                    </tr>
-
-                                                                                </tbody>
-                                                                            </table>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-body bg-black">
-                                                                <div class="row modal-body bg-black">
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer bg-black justify-content-center"> <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <!-- Adjust Modal ends -->
-
-
-                                            <!-- upload Modal starts -->
-                                            <td>
-
-                                                <div class="container">
-                                                    <div class="height d-flex justify-content-center align-items-center"> <button type="button" class="btn btn-primary action-button bg-gray-800 pl-4 pr-4 text-white font-weight-lighter" data-toggle="modal" data-target="#uploadModal"> Upload </button> </div>
-                                                </div>
-
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-xl ">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header float-right bg-black">
-                                                            </div>
-                                                            <div class="modal-body bg-black">
-                                                                <div class="modal-body bg-black justify-content-center">
-                                                                    <div class="row">
-                                                                        <div class="col ml-5 px-5 ">
-                                                                            <p style="font-size: 12px;">Shipment ID:FBA155SQLTBJL</p>
-                                                                        </div>
-                                                                        <div class="col">
-                                                                            <h5>Upload shipment document</h5>
-                                                                        </div>
-
-                                                                    </div>
-
-                                                                    <div class="row mt-5">
-                                                                        <div class="col-12 ml-5 px-5 ">
-                                                                            <p>Note: Please upload the documents in PDF,JPEG or JPG format</p>
-                                                                        </div>
-
-
-                                                                    </div>
-                                                                    <div class="row mt-5 ml-5">
-                                                                        <div class="col-3">
-                                                                            <div class="dropdown border-0">
-                                                                                <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                                                                                  Select Document type
-                                                                                </a>
-
-                                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                                    <a class="dropdown-item" href="#">Action</a>
-                                                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-5">
-
-                                                                            <div class="input-group">
-                                                                                <div class="custom-file">
-                                                                                    <input type="file" class="custom-file-input" id="inputGroupFile04">
-                                                                                    <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
-                                                                                </div>
-
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-4">
-                                                                            <a href="# "> <button type="button " class="btn btn-secondary action-button bg-gray-800 text-white font-weight-lighter ">Submit </button></a>
-                                                                        </div>
-                                                                    </div>
-
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer bg-black justify-content-center"> <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </td>
-                                            <!-- upload Modal ends -->
                                         </tr>
                                         <tr>
                                             <td>Ashton Cox</td>
@@ -816,7 +420,6 @@
                                             <td>Edinburgh</td>
                                             <td>23</td>
                                             <td>2008/12/13</td>
-                                            +
                                             <td>$103,600</td>
                                         </tr>
                                         <tr>
@@ -1202,6 +805,32 @@
 
                             </div>
 
+                            <!-- PAGINATION STARTS -->
+                            <div class="row">
+
+                                <div class="col-lg-2 col-sm-12 col-md-6">
+                                    <div class="dataTables_length" id="dataTable_length"><label><select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-5">
+                                    <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+                                </div>
+                                <div class="col-lg-7 col-sm-12 col-md-7">
+                                    <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                                        <ul class="pagination">
+                                            <li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
+                                            <li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a></li>
+                                            <li class="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PAGINATION ENDS -->
                         </div>
                     </div>
 
@@ -1209,9 +838,9 @@
                 <!-- End of Main Content -->
 
                 <!-- Footer -->
-                <footer class="sticky-footer bg-black ">
-                    <div class="container my-auto ">
-                        <div class="copyright text-center my-auto ">
+                <footer class="sticky-footer bg-black">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
                             <span></span>
                         </div>
                     </div>
@@ -1225,38 +854,38 @@
         <!-- End of Page Wrapper -->
 
         <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded " href="#page-top ">
-            <i class="fas fa-angle-up "></i>
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
         </a>
 
         <!-- Logout Modal-->
-        <div class="modal fade " id="logoutModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-            <div class="modal-dialog " role="document ">
-                <div class="modal-content ">
-                    <div class="modal-header ">
-                        <h5 class="modal-title " id="exampleModalLabel ">Ready to Leave?</h5>
-                        <button class="close " type="button " data-dismiss="modal " aria-label="Close ">
-                        <span aria-hidden="true ">×</span>
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
                     </button>
                     </div>
-                    <div class="modal-body ">Select "Logout " below if you are ready to end your current session.</div>
-                    <div class="modal-footer ">
-                        <button class="btn btn-secondary " type="button " data-dismiss="modal ">Cancel</button>
-                        <a class="btn btn-primary " href="login.html ">Logout</a>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js "></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
         <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
         <!-- Custom scripts for all pages-->
-        <script src="js/script.js "></script>
+        <script src="js/script.js"></script>
 
 
 

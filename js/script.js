@@ -79,19 +79,3 @@ exampleModal.addEventListener('show.bs.modal', function(event) {
     modalTitle.textContent = 'New message to ' + recipient
     modalBodyInput.value = recipient
 })
-
-if ($('.modal').hasClass('open')) {
-
-    $('.container').addClass('blur');
-
-}
-
-
-
-$('.close').click(function() {
-
-    $('.modal').removeClass('open');
-
-    $('.cont').removeClass('blur');
-
-});
