@@ -272,6 +272,25 @@
                         background-color: black !important;
                     }
                     
+                    .h1,
+                    .h2,
+                    .h3,
+                    .h4,
+                    .h5,
+                    .h6,
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6,
+                    p {
+                        margin-bottom: 0.5rem;
+                        font-weight: 500;
+                        line-height: 1.2;
+                        color: #fff !important;
+                    }
+                    
                     [class*=sidebar-dark-] .nav-sidebar>.nav-item.menu-open>.nav-link,
                     [class*=sidebar-dark-] .nav-sidebar>.nav-item:hover>.nav-link,
                     [class*=sidebar-dark-] .nav-sidebar>.nav-item>.nav-link:focus {
@@ -369,15 +388,19 @@
                         color: #eaeaec !important;
                     }
                     
+                    table {
+                        display: table;
+                        border-collapse: separate;
+                        box-sizing: border-box;
+                        text-indent: initial;
+                        border: none !important;
+                    }
+                    
                     .table th,
                     .table td {
                         padding: 0.75rem;
                         vertical-align: top;
-                        border-top: 1px solid #e3e6f0;
-                    }
-                    
-                    td p {
-                        min-width: 260px !important;
+                        border: none !important;
                     }
                     
                     .table thead th {
@@ -402,6 +425,10 @@
                         width: 100%;
                         overflow: hidden !important;
                         -webkit-overflow-scrolling: touch;
+                    }
+                    
+                    table {
+                        border-collapse: inherit !important;
                     }
                     
                     .btn {
@@ -473,7 +500,7 @@
                         background-color: transparent !important;
                         background-clip: border-box;
                         border: 2px solid #873030 !important;
-                        border-radius: 0.35rem !important;
+                        border-radius: 10px !important;
                     }
                     
                     .card-grey-border {
@@ -1579,3 +1606,119 @@
                         color: #fff !important;
                     }
                     /* Pagination css ends */
+                    
+                    .dropdown-item {
+                        display: block;
+                        width: 100%;
+                        padding: 0.25rem 1.5rem;
+                        clear: both;
+                        font-weight: 400;
+                        color: #fff !important;
+                        text-align: inherit;
+                        white-space: nowrap;
+                        background-color: #111 !important;
+                        border-top: 1px solid gray !important;
+                    }
+                    
+                    .dropdown-menu {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        z-index: 1000;
+                        display: none;
+                        float: left;
+                        min-width: 14rem;
+                        padding: 0.5rem 0;
+                        margin: 0.125rem 0 0;
+                        font-size: 1rem;
+                        color: #fff !important;
+                        text-align: left;
+                        list-style: none;
+                        background-color: #111 !important;
+                        background-clip: padding-box;
+                        border: 1px solid rgba(0, 0, 0, .15);
+                        border-radius: 0.25rem;
+                    }
+                    
+                    .modal-body .dropdown {
+                        background-color: #000;
+                        color: white;
+                    }
+                    
+                    .modal-body .dropdown .dropdown-item {
+                        background-color: #000;
+                        color: white;
+                    }
+                    
+                    .inner-table th,
+                    .inner-table td,
+                    .inner-table tr {
+                        font-size: 10px !important;
+                    }
+                    
+                    .input-group-2 {
+                        position: relative;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        -ms-flex-align: stretch;
+                        align-items: center;
+                        width: 70%;
+                    }
+                    
+                    element.style {}
+                    
+                    input[type=checkbox],
+                    input[type=radio] {
+                        box-sizing: border-box;
+                        padding: 0;
+                        color: red !important;
+                    }
+                    
+                    .form-check-input {
+                        position: absolute;
+                        margin-top: 0.3rem;
+                        margin-left: -1.25rem;
+                        color: red !important;
+                    }
+                    
+                    button,
+                    input {
+                        overflow: visible;
+                    }
+                    
+                    button,
+                    input,
+                    optgroup,
+                    select,
+                    textarea {
+                        margin: 0;
+                        font-family: inherit;
+                        font-size: inherit;
+                        line-height: inherit;
+                    }
+                    
+                    *,
+                     ::after,
+                     ::before {
+                        box-sizing: border-box;
+                    }
+                    
+                    *,
+                     :after,
+                     :before {
+                        box-sizing: border-box;
+                    }
+                    
+                    .custom-checkbox .custom-control-input:checked~.custom-control-label::before,
+                    .custom-checkbox>[type="checkbox"]:not(:checked)+label:after,
+                    .custom-checkbox>[type="checkbox"]:checked+label:after {
+                        border: 2px solid #873030 !important;
+                        background-color: transparent !important;
+                        color: #873030 !important
+                    }
+                    
+                    .form-check-label {
+                        color: #fff;
+                    }
