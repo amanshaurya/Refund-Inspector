@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Refund inspector- Fee Protector</title>
+    <title>Refund inspector- Reports</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -70,7 +70,7 @@
             </li>
 
             <!-- Nav Item - Reports -->
-            <li class="nav-item active">
+            <li class="nav-item  active">
                 <a class="nav-link" href="Reports.html">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                     <span>Reports</span></a>
@@ -265,151 +265,124 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!--    Currency Buttons -->
-                    <div class="d-sm-flex align-items-center justify-content-end mb-4">
-                        <div class="currency-switcher mr-5">
-                            <a class="btn" href="#" role="button">USD</a>
-                            <a class="btn" href="#" role="button">GBP</a>
-                            <a class="btn" href="#" role="button">CAD</a>
-                            <a class="btn" href="#" role="button">EUR</a>
-                        </div>
 
+
+                    <!-- DataTables Example -->
+                    <div class="card border-0 shadow mb-4">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr class="sidebar-divider-bottom ">
+                                            <th>Month</th>
+                                            <th>Particular</th>
+                                            <th>Amount Total</th>
+                                            <th>Total Inventory Reimbursed</th>
+                                            <th>Download Report</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>$320,800</td>
+                                            <td>$320,800</td>
+                                            <!-- ACTION -->
+                                            <td>
+                                                <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Download </button></a>
+                                            </td>
+                                            <!-- action ends here -->
+                                        </tr>
+
+                                        <tr>
+
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>$320,800</td>
+                                            <td>$320,800</td>
+                                            <!-- ACTION -->
+                                            <td>
+                                                <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Download </button></a>
+                                            </td>
+                                            <!-- action ends here -->
+                                        </tr>
+
+                                        <tr>
+
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>$320,800</td>
+                                            <td>$320,800</td>
+                                            <!-- ACTION -->
+                                            <td>
+                                                <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Download </button></a>
+                                            </td>
+                                            <!-- action ends here -->
+                                        </tr>
+
+                                        <tr>
+
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>$320,800</td>
+                                            <td>$320,800</td>
+                                            <!-- ACTION -->
+                                            <td>
+                                                <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Download </button></a>
+                                            </td>
+                                            <!-- action ends here -->
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>$320,800</td>
+                                            <td>$320,800</td>
+                                            <!-- ACTION -->
+                                            <td>
+                                                <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Download </button></a>
+                                            </td>
+                                            <!-- action ends here -->
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                            <!-- PAGINATION STARTS -->
+                            <div class="row">
+
+                                <div class="col-lg-2 col-sm-12 col-md-6">
+                                    <div class="dataTables_length" id="dataTable_length"><label><select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-5">
+                                    <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+                                </div>
+                                <div class="col-lg-7 col-sm-12 col-md-7">
+                                    <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                                        <ul class="pagination">
+                                            <li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
+                                            <li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a></li>
+                                            <li class="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PAGINATION ENDS -->
+                        </div>
                     </div>
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Expected Refund Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card  shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="h2 text-center alert font-weight-bold text-white text-uppercase mb-1">
-                                                $158</div>
-                                            <div class="h6 mb-0 font-weight-bold text-center text-gray-800">Expected Refund</div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Open Case Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card  shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="h2 text-center alert font-weight-bold text-white text-uppercase mb-1">
-                                                38</div>
-                                            <div class="h6 mb-0 font-weight-bold text-center text-gray-800">Open Case</div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card  shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="h2 text-center alert font-weight-bold text-white text-uppercase mb-1">
-                                                88%</div>
-                                            <div class="h6 mb-0 font-weight-bold text-center text-gray-800">Average Success Ratio</div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content Row -->
-
-                    <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-xl-9 col-lg-7">
-                            <div class="card-grey-border shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class=" py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="ml-3 font-weight-bold text-white">Earnings Overview</h6>
-
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <p>place chart here</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pie Chart -->
-                        <div class="col-xl-3 col-lg-5">
-                            <div class="card-grey-border shadow mb-4">
-
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="col mr-2 mt-5 mb-5 p-4">
-                                        <div class="h3 text-center alert font-weight-bold text-white text-uppercase mb-1">
-                                            $8690</div>
-                                        <div class="h5 mb-0 font-weight-bold text-center text-gray-800">Total Reimburiusment</div>
-                                    </div>
-                                    <div class="col mr-2 mt-5 mb-5 p-1">
-                                        <div class="h3 text-center font-weight-bold text-white text-uppercase mb-1">
-                                            218</div>
-                                        <div class="h-50 text-center mb-0 font-weight-bold text-gray-800">Total case</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Content Column -->
-                        <div class="col-lg-6 mb-4">
-
-                            <!-- Project Card Example -->
-                            <div class="card-grey-border shadow mb-4">
-                                <div class="py-3">
-                                    <h6 class="m-2 font-weight-bold text-white">Projects</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p>place chart content here</p>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-
-                        <div class="col-lg-6 mb-4">
-
-                            <!-- Illustrations -->
-                            <div class="card-grey-border shadow mb-4">
-                                <div class=" py-3">
-                                    <h6 class="m-2 font-weight-bold text-white">Illustrations</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p>place chart content here</p>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.container-fluid -->
 
                 </div>
                 <!-- End of Main Content -->
@@ -463,6 +436,7 @@
 
         <!-- Custom scripts for all pages-->
         <script src="js/script.js"></script>
+
 
 
 </body>

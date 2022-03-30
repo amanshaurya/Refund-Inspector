@@ -211,7 +211,7 @@
                     
                     .card {
                         box-shadow: none;
-                        background-color: #000
+                        background-color: #000 !important;
                     }
                     
                     .nav-tabs {
@@ -405,7 +405,7 @@
                     
                     .table thead th {
                         vertical-align: bottom;
-                        border-bottom: 2px solid #e3e6f0;
+                        border-bottom: 1px solid #e3e6f0 !important;
                     }
                     
                     .table tbody+tbody {
