@@ -70,14 +70,14 @@
             </li>
 
             <!-- Nav Item - Reports -->
-            <li class="nav-item  active">
+            <li class="nav-item">
                 <a class="nav-link" href="Reports.html">
                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                     <span>Reports</span></a>
             </li>
 
             <!-- Nav Item - Settings -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="settings.html">
                     <i class="fa-solid fa-gear"></i>
                     <span>Settings</span></a>
@@ -268,37 +268,259 @@
                     <div class="wrapper">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-12 col-md-8 col-lg-6">
-                                    <ul class="nav nav-pills">
+                                <div class="col-12 col-md-8 col-lg-10">
+                                    <ul class="nav settings-nav nav-pills sidebar-divider-bottom pb-3 justify-content-center">
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#flamingo" role="tab" aria-controls="pills-flamingo" aria-selected="true">Flamingo</a>
+                                            <a class="nav-link active" data-toggle="pill" href="#shipment" role="tab" aria-controls="pills-shipment" aria-selected="true">Shipment Reconcillition Settings</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#cuckoo" role="tab" aria-controls="pills-cuckoo" aria-selected="false">Cuckoo</a>
+                                            <a class="nav-link" data-toggle="pill" href="#account" role="tab" aria-controls="pills-account" aria-selected="false">Account Info</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#ostrich" role="tab" aria-controls="pills-ostrich" aria-selected="false">Ostrich</a>
+                                            <a class="nav-link" data-toggle="pill" href="#bill" role="tab" aria-controls="pills-bill" aria-selected="false">Bill Payments</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#tropicbird" role="tab" aria-controls="pills-tropicbird" aria-selected="false">Tropicbird</a>
+                                            <a class="nav-link" data-toggle="pill" href="#mws" role="tab" aria-controls="pills-mws" aria-selected="false">MWS Settings</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content mt-3">
-                                        <div class="tab-pane fade show active" id="flamingo" role="tabpanel" aria-labelledby="flamingo-tab">
-                                            Flamingos usually stand on one leg while the other is tucked beneath their bodies. The reason for this behaviour is not fully understood. One theory is that standing on one leg allows the birds to conserve more body heat, given that they spend a significant
-                                            amount of time wading in cold water.
+                                        <!-- Shipment Reconcillition Settings content -->
+                                        <div class="tab-pane fade show active" id="shipment" role="tabpanel" aria-labelledby="shipment-tab">
+                                            <h5 class="text-center">Would you like FBA Refunds to handle shipment reconcillation for you ?</h5>
+                                            <div class="row ml-5 px-5 mt-4">
+                                                <div class="col ml-5">
+                                                    <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Yes </button></a>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> No </button></a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="tab-pane fade" id="cuckoo" role="tabpanel" aria-labelledby="profile-tab">
-                                            The cuckoos are generally medium-sized slender birds. Most species live in trees, though a sizeable minority are ground-dwelling. The family has a cosmopolitan distribution, with the majority of species being tropical.
+
+                                        <!-- Account Info content -->
+                                        <div class="tab-pane fade" id="account" role="tabpanel" aria-labelledby="account-tab">
+                                            <!-- Contact Information -->
+                                            <h5 class="mt-4">Contact Information</h5>
+                                            <div class="row mt-4">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control form-control" placeholder="Name" _bl_3="">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control form-control" placeholder="Email Id" _bl_7="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control form-control" placeholder="Client Id" _bl_3="">
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control form-control" placeholder="Phone" _bl_3="">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container mt-4">
+                                                <div class="row">
+                                                    <div class="col text-center">
+                                                        <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Update Information </button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Password area -->
+
+                                            <h5 class="mt-4">Password</h5>
+                                            <div class="row mt-4">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control form-control" placeholder="password" _bl_3="">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control form-control" placeholder="Confirm Password" _bl_7="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="container mt-4">
+                                                <div class="row">
+                                                    <div class="col text-center">
+                                                        <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Update Information </button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Unsubscribe Area -->
+
+                                            <h5 class="mt-4">Unsubscribe</h5>
+                                            <p>Do you want to unsubscribe from service?</p>
+                                            <!-- Default unchecked -->
+                                            <div class="custom-control custom-checkbox border-0">
+                                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                                                <label class="custom-control-label" for="defaultUnchecked">I have read the terms and conditions related to unsubscribing this service</label>
+                                            </div>
+                                            <div class="container mt-4">
+                                                <div class="row">
+                                                    <div class="col text-center">
+                                                        <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Unsubscribe </button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="tab-pane fade" id="ostrich" role="tabpanel" aria-labelledby="ostrich-tab">
-                                            The common ostrich is farmed around the world, particularly for its feathers, which are decorative and are also used as feather dusters. Its skin is used for leather products and its meat is marketed commercially, with its leanness a common marketing
-                                            point.
+
+                                        <!-- Bill Payments content -->
+                                        <div class="tab-pane fade" id="bill" role="tabpanel" aria-labelledby="bill-tab">
+                                            <h5 class="mt-4">Bill & Payment Settings</h5>
+                                            <p class="text-muted mt-4" style="font-size:14px;">Add Payment Method</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 mt-2">
+                                                    <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Add Bank Account </button></a>
+                                                    <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Add Credit Card Details </button></a>
+                                                </div>
+                                            </div>
+                                            <p class="text-muted mt-4" style="font-size:14px;">Current Payment Method</p>
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label text-muted" for="flexRadioDefault1">
+                                                  Card ending with 8496
+                                                </label>
+                                            </div>
+
+                                            <p class="text-muted mt-3" style="font-size:14px;">Current Payment Method</p>
+                                            <!-- Default unchecked -->
+                                            <h5 class="mt-4">Payment Details</h5>
+                                            <div class="table-responsive">
+                                                <table class="table text-muted" id="dataTable" width="100%" cellspacing="0">
+                                                    <thead>
+                                                        <tr class="sidebar-divider-bottom">
+                                                            <th>Month</th>
+                                                            <th>Date</th>
+                                                            <th>Total Reimbursment</th>
+                                                            <th>Commision Percentage</th>
+                                                            <th>Commision Account</th>
+                                                            <th>Status</th>
+                                                            <th>Download Invoice</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+
+                                                            <td>Feb 15th,2021</td>
+                                                            <td>7981516289</td>
+                                                            <td>Inbound Missing</td>
+                                                            <td>15</td>
+                                                            <td>$45</td>
+                                                            <td>closed</td>
+                                                            <!-- Download Invoice -->
+                                                            <td>
+                                                                <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Download </button></a>
+                                                            </td>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td>Feb 15th,2021</td>
+                                                            <td>7981516289</td>
+                                                            <td>Lost Inventory</td>
+                                                            <td>15</td>
+                                                            <td>$45</td>
+                                                            <td>closed</td>
+                                                            <!-- Download Invoice -->
+                                                            <td>
+                                                                <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Download </button></a>
+                                                            </td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
                                         </div>
-                                        <div class="tab-pane fade" id="tropicbird" role="tabpanel" aria-labelledby="tropicbird-tab">
-                                            Tropicbirds range in size from 76 cm to 102 cm in length and 94 cm to 112 cm in wingspan. Their plumage is predominantly white, with elongated central tail feathers. The three species have different combinations of black markings on the face, back, and
-                                            wings. Their bills are large, powerful and slightly decurved.
+
+                                        <!-- MWS Settings content -->
+                                        <div class="tab-pane fade" id="mws" role="tabpanel" aria-labelledby="mws-tab">
+                                            <h5 class="mt-4">Your Store</h5>
+                                            <p class="text-muted mt-4" style="font-size:14px;">Your haven't linked your store yet</p>
+                                            <div class="row">
+                                                <div class="col-sm-12 mt-2">
+                                                    <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Add Account </button></a>
+
+                                                </div>
+                                            </div>
+                                            <!-- Amazon Integration -->
+                                            <h5 class="mt-4">Amazon Integration</h5>
+                                            <!-- North America -->
+                                            <p class="mt-4" style="font-size:14px;">North America</p>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control" placeholder="Seller ID:" _bl_3="">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control" placeholder="MWS Token:" _bl_3="">
+                                            </div>
+
+                                            <!-- Europe -->
+                                            <p class="mt-4" style="font-size:14px;">Europe</p>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control" placeholder="Seller ID:" _bl_3="">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control" placeholder="MWS Token:" _bl_3="">
+                                            </div>
+
+                                            <!-- Asia -->
+                                            <p class="mt-4" style="font-size:14px;">Asia</p>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control" placeholder="Seller ID:" _bl_3="">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control" placeholder="MWS Token:" _bl_3="">
+                                            </div>
+
+                                            <!-- Begin Syncing Your Data -->
+                                            <h5 class="mt-4">Begin Syncing Your Data</h5>
+                                            <div class="dropdown border-gray mb-4 mt-3" style="max-width: 110px;">
+                                                <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                                                 USA
+                                                </a>
+
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="">
+                                                    <a class="dropdown-item" href="#">USA</a>
+                                                    <a class="dropdown-item" href="#">Europe</a>
+                                                    <a class="dropdown-item" href="#">Asia</a>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control" placeholder="Seller ID:" _bl_3="">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control" placeholder="MWS Token:" _bl_3="">
+                                            </div>
+
+                                            <div class="container mt-4">
+                                                <div class="row">
+                                                    <div class="col text-center">
+                                                        <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Start Syncing Data </button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>

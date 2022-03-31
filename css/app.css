@@ -13,6 +13,12 @@
                         color: #0071c1;
                     }
                     
+                    a {
+                        color: #fff !important;
+                        text-decoration: none;
+                        background-color: transparent;
+                    }
+                    
                     .btn-primary {
                         color: #fff;
                         background-color: #1b6ec2;
@@ -1313,7 +1319,7 @@
                     }
                     
                     .sidebar-divider-bottom {
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
                     }
                     
                     .sidebar-divider-right {
@@ -1667,8 +1673,6 @@
                         width: 70%;
                     }
                     
-                    element.style {}
-                    
                     input[type=checkbox],
                     input[type=radio] {
                         box-sizing: border-box;
@@ -1721,4 +1725,16 @@
                     
                     .form-check-label {
                         color: #fff;
+                    }
+                    
+                    .nav-pills .nav-link.active,
+                    .nav-pills .show>.nav-link {
+                        color: #fff;
+                        background-color: transparent !important;
+                        border: 2px solid #873030 !important;
+                    }
+                    
+                    .settings-nav .nav-link {
+                        display: block;
+                        padding: 1rem 3rem !important;
                     }
