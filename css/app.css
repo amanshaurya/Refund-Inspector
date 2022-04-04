@@ -812,6 +812,29 @@
                         }
                     }
                     
+                    .btn.focus,
+                    .btn:focus {
+                        box-shadow: none !important;
+                    }
+                    
+                    .btn-faq {
+                        background: transparent !important;
+                        border: none !important;
+                        color: #fff !important
+                    }
+                    
+                    .btn-faq::after {
+                        width: 1rem;
+                        text-align: center;
+                        margin-left: 10px;
+                        float: right;
+                        vertical-align: 0;
+                        border: 0;
+                        font-weight: 900;
+                        content: '\f107';
+                        font-family: 'Font Awesome 5 Free';
+                    }
+                    
                     .sidebar .nav-item.dropdown .dropdown-toggle::after,
                     .topbar .nav-item.dropdown .dropdown-toggle::after {
                         width: 1rem;
@@ -1324,6 +1347,10 @@
                     
                     .sidebar-light .sidebar-brand {
                         color: #6e707e;
+                    }
+                    
+                    .sidebar-divider-top {
+                        border-top: 2px solid rgba(255, 255, 255, 0.15) !important;
                     }
                     
                     .sidebar-divider-bottom {
