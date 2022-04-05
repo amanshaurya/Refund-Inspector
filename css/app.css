@@ -429,6 +429,10 @@
                         border: none !important;
                     }
                     
+                    .table thead th {
+                        border-bottom: none !important;
+                    }
+                    
                     .inner-table th {
                         border: none !important;
                     }
@@ -1527,6 +1531,7 @@
                     
                     .form-group {
                         border: none!important;
+                        color: #fff !important;
                     }
                     
                     .btn-primary {
@@ -1770,4 +1775,150 @@
                     
                     .border-left-red {
                         border-left: 0.25rem solid #873030!important;
+                    }
+                    
+                    .ul-faq ul li::before {
+                        content: "\2022";
+                        color: #d3515d;
+                        font-weight: bolder;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                    
+                    .form-control-ticket {
+                        border-radius: 0.5rem !important;
+                        background-color: transparent !important;
+                        border: 2px solid rgba(255, 255, 255, 0.15) !important;
+                    }
+                    
+                    .form-group-ticket {
+                        margin: 14px 45px !important;
+                    }
+                    
+                    .form-control.focus,
+                    .form-control:focus {
+                        box-shadow: none !important;
+                        border: 1px solid #ced4da !important;
+                    }
+                    
+                    .btn-danger {
+                        border-radius: 2rem !important;
+                    }
+                    
+                    .box-header {
+                        background-color: #dc3545 !important;
+                        display: inline-block;
+                        font-size: 1.4rem !important;
+                        padding: 0.45rem 1.5rem!important;
+                        border-radius: 0.55rem !important;
+                    }
+                    /* chat-box */
+                    
+                    .chat-list {
+                        padding: 0;
+                        font-size: .8rem;
+                    }
+                    
+                    .chat-list li {
+                        margin-bottom: 10px;
+                        overflow: auto;
+                        color: #ffffff;
+                    }
+                    
+                    .chat-list .chat-img {
+                        float: left;
+                        width: 48px;
+                    }
+                    
+                    .chat-list .chat-img img {
+                        -webkit-border-radius: 50px;
+                        -moz-border-radius: 50px;
+                        border-radius: 50px;
+                        width: 100%;
+                    }
+                    
+                    .chat-list .chat-message {
+                        -webkit-border-radius: 50px;
+                        -moz-border-radius: 50px;
+                        border-radius: 50px;
+                        background: transparent;
+                        padding: 31px 20px;
+                        position: relative;
+                        border: 1px solid #fff;
+                    }
+                    
+                    .chat-list .chat-message:before {
+                        content: "";
+                        position: absolute;
+                        top: 15px;
+                        width: 0;
+                        height: 0;
+                    }
+                    
+                    .chat-list .chat-message h5 {
+                        margin: 0 0 5px 0;
+                        font-weight: 600;
+                        line-height: 100%;
+                        font-size: .9rem;
+                    }
+                    
+                    .chat-list .chat-message p {
+                        line-height: 18px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    .chat-list .chat-body {
+                        margin-left: 20px;
+                        float: left;
+                        width: 70%;
+                    }
+                    
+                    .chat-list .out .chat-img {
+                        float: right;
+                    }
+                    
+                    .chat-list .out .chat-body {
+                        float: right;
+                        margin-right: 20px;
+                        text-align: right;
+                    }
+                    
+                    .chat-list .out .chat-message {
+                        background: transparent;
+                    }
+                    
+                    .msj:before {
+                        width: 0;
+                        height: 0;
+                        content: "";
+                        top: -5px;
+                        left: -14px;
+                        position: relative;
+                        border-style: solid;
+                        border-width: 0 13px 13px 0;
+                        border-color: transparent #ffffff transparent transparent;
+                    }
+                    
+                    .msj-rta:after {
+                        width: 0;
+                        height: 0;
+                        content: "";
+                        top: -5px;
+                        left: 14px;
+                        position: relative;
+                        border-style: solid;
+                        border-width: 13px 13px 0 0;
+                        border-color: whitesmoke transparent transparent transparent;
+                    }
+                    
+                    .content {
+                        margin-top: 40px;
+                    }
+                    
+                    .reply-send i {
+                        padding: 5px 2px 5px 0 !important;
+                        font-size: 1.8em !important;
+                        color: #d3515d !important;
                     }

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Refund inspector-Help & Support</title>
+    <title>Refund inspector-Ticket Log </title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -267,104 +267,66 @@
 
                     <!-- Page Heading -->
 
-                    <h4 class="text-center">Help & Support</h4>
+                    <div class="row mt-5">
 
-                    <div class="sidebar-divider-top mt-3">
+                        <div class="col text-center">
+                            <h5>View Ticket Log</h5>
+                            <div class="d-sm-flex align-items-center justify-content-center mb-4 mt-5">
 
-                        <div class="row mt-3">
-                            <div class="col-12">
-                                <h5>FAQ</h5>
-                            </div>
-                            <div class="col-12 ml-1 mt-3">
-                                <button class="btn btn-faq" type="button" data-toggle="collapse" data-target="#faq-1" aria-expanded="false" aria-controls="collapseExample">
-                                How FBA Refund Works?
-                              </button>
-                                <div class="collapse ml-1" id="faq-1">
-                                    <div class="card card-body text-muted">
-                                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                    </div>
+
+                                <div class="form-check custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+                                    <label class="form-check-label custom-control-label" for="flexCheckChecked">
+                                    Active Ticket
+                                  </label>
+                                </div>
+                                <div class="form-check ml-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      Answered Ticket
+                                  </label>
+                                </div>
+                                <div class="form-check ml-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      Need Your Attention
+                                  </label>
                                 </div>
                             </div>
-                            <div class="col-12 ml-1 mt-3">
-                                <button class="btn btn-faq" type="button" data-toggle="collapse" data-target="#faq-2" aria-expanded="false" aria-controls="collapseExample">
-                                How Long Does It Take?
-                              </button>
-                                <div class="collapse show" id="faq-2">
-                                    <div class="card card-body text-muted ul-faq">
-                                        <ul class="list-unstyled ml-3">
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus?</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus?</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus?</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 ml-1 mt-3">
-                                <button class="btn btn-faq" type="button" data-toggle="collapse" data-target="#faq-3" aria-expanded="false" aria-controls="collapseExample">
-                                How to Verify Reimburiusment ID with Amazon?
-                              </button>
-                                <div class="collapse" id="faq-3">
-                                    <div class="card card-body text-muted ul-faq">
-                                        <ul class="list-unstyled ml-3">
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus?</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus?</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus?</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 ml-1 mt-3">
-                                <button class="btn btn-faq" type="button" data-toggle="collapse" data-target="#faq-4" aria-expanded="false" aria-controls="collapseExample">
-                                How to Submit Shipment Invoices?
-                              </button>
-                                <div class="collapse" id="faq-4">
-                                    <div class="card card-body text-muted ul-faq">
-                                        <ul class="list-unstyled ml-3">
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus?</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus?</li>
-                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus?</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <div class="table-responsive">
+                                <table class="table mt-4" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr class="sidebar-divider-bottom text-muted">
+                                            <th>Date</th>
+                                            <th>Ticket ID</th>
+                                            <th>Subject</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-muted">
+
+                                            <td>Jan 15th,2021</td>
+                                            <td>#2551</td>
+                                            <td>I have been charged than expected</td>
+                                            <td>Active</td>
+                                            <!-- ACTION -->
+                                            <td>
+                                                <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter">View</button></a>
+                                            </td>
+                                            <!-- action ends here -->
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+
                             </div>
                         </div>
 
-                        <div class="row mt-3">
-                            <div class="col-12">
-                                <h5>Support</h5>
-                            </div>
-                            <!-- Create Ticket -->
-                            <div class="col-xl-6 col-md-6 mb-4 mt-4">
-                                <div class="card-grey-border shadow h-100 py-2">
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col text-center mr-2">
-                                                <h5> Need More Help? </h5>
-                                                <p class="text-muted mt-3">Create Ticket and speak with our experts</p>
-                                                <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Create Ticket </button></a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Open Case Example -->
-                            <div class="col-xl-6 col-md-6 mb-4 mt-4">
-                                <div class="card-grey-border shadow h-100 py-2">
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col text-center mr-2">
-                                                <h5> Ticket Log </h5>
-                                                <p class="text-muted mt-3">View the ticket which you have created previously</p>
-                                                <a href="#"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> View Ticket Log </button></a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <!-- End of Main Content -->
 
