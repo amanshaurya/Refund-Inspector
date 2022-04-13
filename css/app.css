@@ -1855,5 +1855,13 @@
                     }
                     
                     .inner-table tbody {
-                        line-height: 0.25rem !important;
+                        line-height: 0.65rem !important;
+                    }
+                    
+                    .hide {
+                        display: none !important;
+                    }
+                    
+                    .showd {
+                        display: inline-block !important;
                     }

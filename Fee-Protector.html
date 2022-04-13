@@ -344,7 +344,7 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr>
+                                                                <tr class="list-items">
                                                                     <!-- Tittle starts here -->
                                                                     <td>
                                                                         <img src="img/image.jpg" width="100" height="100">
@@ -366,15 +366,16 @@
                                                                     <!-- Dimension starts here -->
                                                                     <td>
 
-                                                                        <table class=" inner-table border-gray table-no-border " id="dataTable " width="100% " cellspacing="0 ">
+                                                                        <table class="inner-table border-gray table-no-border " id="dataTable " width="100% " cellspacing="0 ">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <th></th>
-                                                                                    <th>Length</th>
-                                                                                    <th>Width</th>
-                                                                                    <th>Height</th>
+                                                                                    <th>&nbsp</th>
+                                                                                    <th>Longest</th>
+                                                                                    <th>Median</th>
+                                                                                    <th>Shortest</th>
                                                                                     <th>Weight</th>
-                                                                                    <th>Fees</th>
+                                                                                    <th>Cost</th>
+
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td>Amazon</td>
@@ -382,7 +383,17 @@
                                                                                     <td>4.8</td>
                                                                                     <td>3.15</td>
                                                                                     <td>0.88</td>
-                                                                                    <td>$4.99</td>
+                                                                                    <td>6.66</td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>&nbsp</td>
+                                                                                    <td>Centimeters</td>
+                                                                                    <td>&nbsp</td>
+                                                                                    <td>&nbsp</td>
+                                                                                    <td>grams</td>
+                                                                                    <td>AUD</td>
+
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -395,55 +406,92 @@
                                                                     <!-- ACTION -->
                                                                     <td>
 
-                                                                        <div class="container-fluid">
-                                                                            <div class="height d-flex justify-content-center align-items-center"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white pl-4 pr-4 font-weight-lighter" data-toggle="modal" data-target="#edit-fee-content-Modal"> Edit </button>                                                                                </div>
-                                                                        </div>
-                                                                        <!-- Modal -->
-                                                                        <div class="modal fade" id="edit-fee-content-Modal" tabindex="-1" aria-labelledby="edit-fee-content-Modal" aria-hidden="true" style="display: none;">
-                                                                            <div class="modal-dialog modal-xl ">
-                                                                                <div class="modal-content">
-                                                                                    <div class="px-5 py-5 bg-black">
-                                                                                        <div class="row">
-                                                                                            <div class="col">
-                                                                                                <div class="form-group">
-                                                                                                    <label for="Length">Length</label>
-                                                                                                    <input type="text" class="form-control form-control" placeholder="Length" _bl_3="">
+                                                                        <a href="#"> <button type="button" id="fee-edit" class="btn btn-primary action-button bg-gray-800 text-white font-weight-lighter"> Edit </button></a>
 
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                            <div class="col">
-                                                                                                <div class="form-group">
-                                                                                                    <label for="Width">Width</label>
-                                                                                                    <input type="text" class="form-control form-control" placeholder="Width" _bl_3="">
-
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col">
-                                                                                                <div class="form-group">
-                                                                                                    <label for="Height">Height</label>
-                                                                                                    <input type="text" class="form-control form-control" placeholder="Height" _bl_3="">
-
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="row">
+                                                                    </td>
+                                                                    <!-- action ends here -->
+                                                                </tr>
+                                                                <tr class="list-items-edit hide ">
+                                                                    <!-- Tittle starts here -->
+                                                                    <td>
+                                                                        <img src="img/image.jpg" width="100" height="100">
+                                                                    </td>
+                                                                    <td>
+                                                                        <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit</p>
 
 
-                                                                                            <div class="col-4">
-                                                                                                <div class="form-group">
-                                                                                                    <label for="Weight">Weight</label>
-                                                                                                    <input type="text" class="form-control form-control" placeholder="Weight" _bl_3="">
-
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-
-                                                                                    <div class="modal-footer bg-black justify-content-center"> <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button> </div>
-                                                                                </div>
+                                                                        <div class="row">
+                                                                            <div class="col-6">
+                                                                                <p style="font-size: 10px;">ASIN:B0BNFGFF</p>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <p style="font-size: 10px;">SKU:B0BNFGFF5</p>
                                                                             </div>
                                                                         </div>
+                                                                    </td>
+
+                                                                    <!-- Dimension starts here -->
+                                                                    <td>
+
+                                                                        <!-- WORKS ONLY WHEN EDIT BUTTON IS CLICKED... PLEASE DO NOT REMOVE  -->
+                                                                        <table class="inner-table border-gray table-no-border " id="dataTable " width="100% " cellspacing="0 ">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <th></th>
+                                                                                    <th>Longest</th>
+                                                                                    <th>Median</th>
+                                                                                    <th>Shortest</th>
+                                                                                    <th>Weight</th>
+                                                                                    <th>Cost</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Amazon</td>
+                                                                                    <td>
+                                                                                        <div class="form-group"> <input type="text" class="form-control form-control" placeholder="Length" _bl_3=""> </div>
+                                                                                    </td>
+                                                                                    <td>4.8</td>
+                                                                                    <td>3.15</td>
+                                                                                    <td>
+                                                                                        <div class="form-group"> <input type="text" class="form-control form-control" placeholder="Weight" _bl_3=""> </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="form-group"> <input type="text" class="form-control form-control" placeholder="cost" _bl_3=""> </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>&nbsp</td>
+                                                                                    <td>
+                                                                                        <div class="form-group"> <input type="text" class="form-control form-control" placeholder="value" _bl_3=""> </div>
+                                                                                    </td>
+                                                                                    <td>&nbsp</td>
+                                                                                    <td>&nbsp</td>
+                                                                                    <td>
+                                                                                        <div class="form-group"> <input type="text" class="form-control form-control" placeholder="value" _bl_3=""> </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="form-group"> <input type="text" class="form-control form-control" placeholder="value" _bl_3=""> </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                    <!-- Unit sold starts -->
+                                                                    <td>3200</td>
+                                                                    <td>$25000</td>
+
+
+                                                                    <!-- ACTION -->
+                                                                    <td>
+                                                                        <div class="row">
+                                                                            <div class="py-0">
+                                                                                <a href="#"> <button type="button" class="btn btn-primary px-4 text-white font-weight-lighter"> save </button></a>
+                                                                            </div>
+                                                                            <div class="py-3">
+                                                                                <a href="#"> <button type="button" class="btn btn-primary px-4 text-white font-weight-lighter"> cancel </button></a>
+                                                                            </div>
+                                                                        </div>
+
+
                                                                     </td>
                                                                     <!-- action ends here -->
                                                                 </tr>
@@ -576,6 +624,18 @@
 
             <!-- Custom scripts for all pages-->
             <script src="js/script.js"></script>
+
+            <script>
+                $(document).ready(function() {
+                    $("#fee-edit").click(function() {
+                        $(".list-items").replaceWith($(".list-items-edit"));
+                    });
+                    $("#fee-edit").click(function() {
+                        $(".list-items-edit").removeClass("hide");
+                    });
+
+                });
+            </script>
 
 
 

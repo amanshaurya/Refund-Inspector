@@ -1,0 +1,54 @@
+  <!-- ACTION -->
+                                                                    <td>
+
+                                                                        <div class="container-fluid">
+                                                                            <div class="height d-flex justify-content-center align-items-center"> <button type="button" class="btn btn-primary action-button bg-gray-800 text-white pl-4 pr-4 font-weight-lighter" data-toggle="modal" data-target="#edit-fee-content-Modal"> Edit </button>                                                                                </div>
+                                                                        </div>
+                                                                        <!-- Modal -->
+                                                                        <div class="modal fade" id="edit-fee-content-Modal" tabindex="-1" aria-labelledby="edit-fee-content-Modal" aria-hidden="true" style="display: none;">
+                                                                            <div class="modal-dialog modal-xl ">
+                                                                                <div class="modal-content">
+                                                                                    <div class="px-5 py-5 bg-black">
+                                                                                        <div class="row">
+                                                                                            <div class="col">
+                                                                                                <div class="form-group">
+                                                                                                    <label for="Length">Length</label>
+                                                                                                    <input type="text" class="form-control form-control" placeholder="Length" _bl_3="">
+
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div class="col">
+                                                                                                <div class="form-group">
+                                                                                                    <label for="Width">Width</label>
+                                                                                                    <input type="text" class="form-control form-control" placeholder="Width" _bl_3="">
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <div class="form-group">
+                                                                                                    <label for="Height">Height</label>
+                                                                                                    <input type="text" class="form-control form-control" placeholder="Height" _bl_3="">
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+
+
+                                                                                            <div class="col-4">
+                                                                                                <div class="form-group">
+                                                                                                    <label for="Weight">Weight</label>
+                                                                                                    <input type="text" class="form-control form-control" placeholder="Weight" _bl_3="">
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="modal-footer bg-black justify-content-center"> <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button> </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- action ends here -->
